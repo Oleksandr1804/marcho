@@ -371,6 +371,52 @@
     transition: all 0.5s;
   }
 }
+.video-fashion{
+  background-color: #f6f6f6;
+  background-image: url(../images/trending-bg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 125px 0;
+  &__inner{
+    display: flex;
+  }
+
+  &__popup{
+    margin-right: 60px;
+    max-width: 535px;
+    height: 479px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  &__content{
+    min-width: 570px;
+  }
+  &__subtitle{
+    padding-top: 80px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $accent;
+  }
+  &__title{
+    text-align: left;    
+  }
+  &__text{
+    @extend %roboto-400;
+    max-width: 560px;
+    margin-bottom: 60px;
+  }
+  &__link{
+    @extend %btn;
+  }
+
+}
   
   
   
