@@ -4,7 +4,14 @@ $(function () {
    arrows: false,
    fade: true,
    autoplay: true,
-   autoplaySpeedSpeed: 2000
+   autoplaySpeedSpeed: 2000  
+  });
 
-  })
+  $('.star').rateYo({
+    starWidth: "17px",
+    normalFill: "#ccccce",
+    ratedFill: "#ffc35b",
+    readOnly: true
+  });
+  
 });

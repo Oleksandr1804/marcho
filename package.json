@@ -25,6 +25,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.13"
+    "autoprefixer": "^10.4.13",
+    "rateyo": "^2.3.2"
   }
 }
