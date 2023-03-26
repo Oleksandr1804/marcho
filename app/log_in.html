@@ -13,13 +13,13 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#">
+        <a class="logo" href="index.html">
           <img class="logo__img" src="images/logo.png" alt="logo">
         </a>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link menu__list-link--active" href="#">HOME</a>
+              <a class="menu__list-link menu__list-link--active" href="index.html">HOME</a>
             </li>
             <li class="menu__list-item">
               <a class="menu__list-link" href="#">SHOP</a>
@@ -36,7 +36,7 @@
           </ul>
         </nav>
         <div class="user-nav">
-          <a class="user-nav__link" href="#">
+          <a class="user-nav__link" href="log_in.html">
             <img src="images/icons/user.svg" alt="user icon">
           </a>
           <a class="user-nav__link" href="#">
@@ -73,7 +73,31 @@
             </ul>
           </div>
         </div>
+      </div>
+    </section>
 
+    <section class="modal">
+      <div class="container">
+        <div class="modal__links">
+          <a class="modal__link " href="#">REGISTER</a>
+          <a class="modal__link modal__link--activ" href="#">LOGIN</a>
+        </div>
+        <form class="modal__form" action="#">
+          <label class="modal__label">
+            Username or email address*
+            <input class="modal__input" type="text" required>
+          </label>
+          <label class="modal__label">
+            Password*
+            <input class="modal__input" type="password" required>
+          </label>
+          <label>
+            <input type="checkbox">
+            Remember me
+          </label>
+          <button class="modal__btn" type="submit">LOG IN</button>
+          <a class="modal__remember" href="#">Lost your password?</a>
+        </form>
       </div>
     </section>
 

@@ -185,6 +185,21 @@
   }
 }
 
+.top{
+  &__container{
+    max-width: 1700px;
+    margin: 0 auto;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 120px 0 130px;
+    text-align: center;
+  }
+  &__title{
+    @extend %roboto-400;
+  }
+}
+
 .top-slider {
   background-color: $bg;
   background-image: url('../images/top-slider-bg.png');
@@ -464,8 +479,7 @@
 
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    // grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);   
     grid-gap: 45px 30px;
 
   }
@@ -766,7 +780,63 @@
   }
 
 }
+.modal{
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 120px 0 120px;
+  &__links{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+  } 
+  &__link{
+    @extend %roboto-400;
+    font-size: 22px;
+    color: #909090;
+    margin: 0 30px;
+  }
+  &__link--activ{
+    @extend %roboto-700;
+    color: $accent;
+  }
+  &__label{
+    margin-bottom: 30px;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: $bg;
+    margin-top: 4px;
+    padding: 0 15px;   
+    height: 60px;
+  }
 
+  &__btn{
+    background-color: #292929;
+    display: block;
+    width: 100%;
+    color: #fff;
+    margin-top: 20px;
+    @extend %roboto-400;    
+    letter-spacing: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+  &__remember{
+    padding-top: 30px;
+    transition: all 0.5s;
+    &:hover{
+      color: $accent
+    }
+  }
+
+
+
+
+}
 
 
 
