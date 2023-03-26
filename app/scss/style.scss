@@ -800,6 +800,7 @@
     color: $accent;
   }
   &__label{
+   
     margin-bottom: 30px;
   }
   &__input{
@@ -808,8 +809,12 @@
     border: none;
     background-color: $bg;
     margin-top: 4px;
+    margin-bottom: 30px;
     padding: 0 15px;   
     height: 60px;
+  }
+  &__text{
+    margin-bottom: 35px;
   }
 
   &__btn{
