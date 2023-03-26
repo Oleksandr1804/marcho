@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
 }
 
 .menu {
@@ -185,17 +186,18 @@
   }
 }
 
-.top{
-  &__container{
+.top {
+  &__container {
     max-width: 1700px;
-    margin: 0 auto;    
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     padding: 120px 0 130px;
     text-align: center;
   }
-  &__title{
+
+  &__title {
     @extend %roboto-400;
   }
 }
@@ -479,7 +481,7 @@
 
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);   
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 45px 30px;
 
   }
@@ -693,7 +695,8 @@
     grid-gap: 0 30px;
     position: relative;
   }
-  &__items::before{
+
+  &__items::before {
     position: absolute;
     content: '';
     width: 126px;
@@ -780,66 +783,103 @@
   }
 
 }
-.modal{
+
+.modal {
   max-width: 570px;
   margin: 0 auto;
   padding: 120px 0 120px;
-  &__links{
+
+  &__links {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
-  } 
-  &__link{
+  }
+
+  &__link {
     @extend %roboto-400;
     font-size: 22px;
     color: #909090;
     margin: 0 30px;
   }
-  &__link--activ{
+
+  &__link--activ {
     @extend %roboto-700;
     color: $accent;
   }
-  &__label{
-   
+
+  &__label {
+    color: $default;
     margin-bottom: 30px;
   }
-  &__input{
+
+  &__input {
     display: block;
     width: 100%;
     border: none;
     background-color: $bg;
     margin-top: 4px;
     margin-bottom: 30px;
-    padding: 0 15px;   
+    padding: 0 15px;
     height: 60px;
   }
-  &__text{
+
+  &__text {
     margin-bottom: 35px;
+    color: $default;
   }
 
-  &__btn{
+  &__btn {
     background-color: #292929;
     display: block;
     width: 100%;
     color: #fff;
     margin-top: 20px;
-    @extend %roboto-400;    
+    @extend %roboto-400;
     letter-spacing: 5px;
     border: none;
     cursor: pointer;
     padding: 15px 0;
     margin-bottom: 20px;
   }
-  &__remember{
+
+  &__remember {
     padding-top: 30px;
     transition: all 0.5s;
-    &:hover{
+
+    &:hover {
       color: $accent
     }
   }
+}
 
+.page-404 {
+  padding: 110px 0;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  &__title {
+    @extend %roboto-700;
+    font-size: 48px;
+    line-height: 26px;
+    color: #28384f;
+    margin-top: 160px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    max-width: 470px;
+    margin-bottom: 60px;
+  }
+  &__link{
+    @extend %btn;
+    box-shadow: 0px 5px 25px 0px rgba(254, 62, 87, 0.35);
+  }
+  &__image{
+    
+  }
 
 }
 
@@ -852,5 +892,4 @@
 
 
 
-
-  @import 'media';
+@import 'media';
